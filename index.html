@@ -2,17 +2,22 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anish Rajoriya | Developer Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anish Rajoriya | Full-Stack Developer</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header>
+    <div class="hero">
+      <img src="profile.jpg" alt="Anish Rajoriya" class="profile-pic">
+      <h1>Anish Rajoriya</h1>
+      <h3>Full-Stack Developer | Java | React | Spring Boot</h3>
+      <p class="tagline">Transforming ideas into responsive, modern web solutions</p>
+    </div>
     <nav>
-      <h2 class="logo">Anish Rajoriya</h2>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -24,50 +29,54 @@
     </nav>
   </header>
 
-  <section class="hero fade-in">
-    <div class="content">
-      <h1>Hi, I'm <span>Anish Rajoriya</span></h1>
-      <p>Java | UI & Full-Stack Developer</p>
-      <a href="#contact" class="btn">Contact Me</a>
-    </div>
-  </section>
-
-  <section id="about" class="about fade-in">
+  <section id="about" class="fade-in">
     <h2>About Me</h2>
     <p>I am a passionate full-stack developer with strong skills in Java, React, Spring Boot, and RESTful APIs. I focus on building responsive, scalable, and user-friendly applications.</p>
   </section>
 
-  <section id="skills" class="skills fade-in">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li><strong>Languages:</strong> Java, JavaScript, Python, C, C++, HTML, CSS</li>
-      <li><strong>Frameworks:</strong> React.js, Bootstrap, Spring (Basic), Spring Boot (Basic)</li>
-      <li><strong>Databases:</strong> Oracle (SQL, PL/SQL), MySQL, MongoDB</li>
-      <li><strong>Cloud/Other:</strong> AWS, REST API</li>
-    </ul>
+  <section id="skills" class="fade-in">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box">
+        <h3>Languages</h3>
+        <p>Java, JavaScript, Python, C, C++, HTML, CSS</p>
+      </div>
+      <div class="skill-box">
+        <h3>Frameworks & Libraries</h3>
+        <p>React.js, Bootstrap, Spring, Spring Boot</p>
+      </div>
+      <div class="skill-box">
+        <h3>Databases</h3>
+        <p>Oracle (SQL, PL/SQL), MySQL, MongoDB</p>
+      </div>
+      <div class="skill-box">
+        <h3>Cloud & APIs</h3>
+        <p>AWS (Basic), REST APIs</p>
+      </div>
+    </div>
   </section>
 
-  <section id="projects" class="projects fade-in">
+  <section id="projects" class="fade-in">
     <h2>Projects</h2>
     <div class="project">
       <h3>E-Commerce Product Page</h3>
-      <p><strong>Tech:</strong> HTML, CSS, JavaScript, React.js, Bootstrap</p>
+      <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, React.js, Bootstrap</p>
       <ul>
-        <li>Responsive design, real-time updates, interactive features.</li>
-        <li>Optimized performance using lazy loading and grid system.</li>
+        <li>Responsive UI with React.js & Bootstrap</li>
+        <li>Interactive features, optimized performance</li>
       </ul>
     </div>
     <div class="project">
       <h3>Smart Ticket Reservation System</h3>
-      <p><strong>Tech:</strong> Java, Spring Boot, React.js, MySQL, REST APIs</p>
+      <p><strong>Tech Stack:</strong> Java, Spring Boot, React.js, MySQL, REST APIs</p>
       <ul>
-        <li>Unified ticketing platform for events and transport.</li>
-        <li>Authentication, APIs, and responsive UI integration.</li>
+        <li>Platform for booking transport and event tickets</li>
+        <li>Authentication, REST APIs, MySQL storage</li>
       </ul>
     </div>
   </section>
 
-  <section id="education" class="education fade-in">
+  <section id="education" class="fade-in">
     <h2>Education</h2>
     <ul>
       <li><strong>B.Tech. in Computer Science</strong> – Gyan Sagar Engineering College (2021–2025)</li>
@@ -76,16 +85,16 @@
     </ul>
   </section>
 
-  <section id="extracurricular" class="extracurricular fade-in">
+  <section id="extracurricular" class="fade-in">
     <h2>Extracurricular Activities</h2>
     <ul>
-      <li>Home Tutoring (Math & Science, 2 years): Designed custom lesson plans and used interactive methods to improve student performance.</li>
-      <li>Represented college at National-Level Football Tournament.</li>
-      <li>Played Football and Cricket at State Level during school.</li>
+      <li>Home Tutoring (Math & Science): Interactive teaching for 2 years</li>
+      <li>National-Level Football (College Representation)</li>
+      <li>State-Level Football and Cricket (School)</li>
     </ul>
   </section>
 
-  <section id="contact" class="contact fade-in">
+  <section id="contact" class="fade-in">
     <h2>Contact</h2>
     <p><i class="fa fa-envelope"></i> anishrajoriya909@gmail.com</p>
     <p><i class="fa fa-phone"></i> 9424476609</p>
