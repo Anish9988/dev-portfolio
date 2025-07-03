@@ -1,7 +1,5 @@
-// Add any interactive features or animations here
-document.addEventListener("DOMContentLoaded", function() {
-    const sections = document.querySelectorAll("section");
-    sections.forEach((section, index) => {
-        section.style.animationDelay = `${index * 0.2}s`;
-    });
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Message sent! Thank you for contacting me.");
+    document.getElementById("contact-form").reset();
 });

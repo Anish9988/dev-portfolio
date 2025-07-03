@@ -3,76 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anish Rajoriya - Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="profile-photo">
-            <img src="your-photo-url.jpg" alt="Anish Rajoriya">
-        </div>
-        <h1>Anish Rajoriya</h1>
-        <h2>Java | UI & Full-Stack Developer</h2>
+        <h1>Welcome to My Portfolio</h1>
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
+        <p>I'm a Web Developer</p>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#extracurricular">Extracurricular Activities</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="about">
-        <h3>About Me</h3>
-        <p>Passionate developer with experience in Java, UI, and Full-Stack development. Committed to creating efficient and user-friendly applications.</p>
-    </section>
-
-    <section id="skills">
-        <h3>Technical Skills</h3>
-        <ul>
-            <li>Java (Core & Advanced)</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>C, C++</li>
-            <li>HTML, CSS</li>
-            <li>React.js, Bootstrap</li>
-            <li>Spring Boot (Basic)</li>
-            <li>MySQL, MongoDB (Basic)</li>
-            <li>AWS</li>
-            <li>REST API</li>
-        </ul>
+        <h2>About Me</h2>
+        <p>Detailing my skills and experience in web development...</p>
     </section>
 
     <section id="projects">
-        <h3>Projects</h3>
-        <div class="project">
-            <h4>E-Commerce Product Page</h4>
-            <p>Developed a responsive web design using React.js and Bootstrap, ensuring UI consistency and accessibility.</p>
-        </div>
-        <div class="project">
-            <h4>Smart Ticket Reservation System</h4>
-            <p>Built a ticket booking system for transport, events, and cinemas using a unified platform.</p>
+        <h2>Projects</h2>
+        <div class="project-gallery">
+            <div class="project-card">Project 1</div>
+            <div class="project-card">Project 2</div>
+            <div class="project-card">Project 3</div>
         </div>
     </section>
 
-    <section id="extracurricular">
-        <h3>Extracurricular Activities</h3>
-        <ul>
-            <li>Home Tutoring (Math & Science, 2 years)</li>
-            <li>Represented college at National-Level Football Tournament</li>
-            <li>Played Football and Cricket at State Level during school</li>
-        </ul>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
-    <footer id="contact">
-        <h3>Contact Me</h3>
-        <p>Email: <a href="mailto:anishrajoriya909@gmail.com">anishrajoriya909@gmail.com</a></p>
-        <p>Phone: 9424476609</p>
+    <footer>
+        <p>&copy; 2023 My Portfolio. All Rights Reserved.</p>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
