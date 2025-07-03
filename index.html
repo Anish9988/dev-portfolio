@@ -1,74 +1,99 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anish Rajoriya | Dev Portfolio</title>
+  <title>Anish Rajoriya | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="theme-toggle" onclick="toggleTheme()">🌗</div>
+
   <header>
-    <h1>Anish Rajoriya</h1>
-    <p>Full Stack Developer | M.Tech | MERN Stack Enthusiast</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container">
+      <img src="profile.jpg" alt="Profile" class="profile-pic" data-aos="fade-down">
+      <h1>Anish Rajoriya</h1>
+      <p>M.Tech | Full Stack Developer | MERN Enthusiast</p>
+      <a href="resume.pdf" class="resume-btn" download><i class="fas fa-download"></i> Resume</a>
+<nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#activities">Activities</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="about">
+  <section id="about" class="container" data-aos="fade-right">
     <h2>About Me</h2>
-    <p>
-      I am a passionate and hardworking M.Tech graduate with expertise in Java, MERN Stack, Python, and frontend technologies. I am actively seeking a software development role where I can grow and contribute to impactful projects.
-    </p>
+    <p>I am a passionate and hardworking M.Tech graduate with strong interest in web and full-stack development using the MERN stack. I love building scalable, user-friendly applications.</p>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="container" data-aos="fade-left">
     <h2>Skills</h2>
-    <ul>
-      <li>Core Java, Advanced Java</li>
-      <li>React.js, Node.js, Express.js</li>
-      <li>MongoDB, MySQL, Oracle</li>
-      <li>HTML, CSS, JavaScript, Bootstrap</li>
-      <li>Git, GitHub, REST API</li>
+    <ul class="skills-list">
+      <li><i class="fab fa-java"></i> Java (Core & Advanced)</li>
+      <li><i class="fab fa-react"></i> React.js, Node.js, Express.js</li>
+      <li><i class="fas fa-database"></i> MongoDB, MySQL, Oracle</li>
+      <li><i class="fab fa-html5"></i> HTML, CSS, JavaScript, Bootstrap</li>
+      <li><i class="fab fa-git-alt"></i> Git, GitHub, REST APIs</li>
     </ul>
   </section>
 
-  <section id="projects">
+  <section id="education" class="container" data-aos="zoom-in">
+    <h2>Education</h2>
+    <ul class="edu-list">
+      <li><strong>M.Tech</strong> - GyanSagar College of Engineering, 2025</li>
+      <li><strong>B.Tech</strong> - GyanSagar College of Engineering, 2023</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="container" data-aos="fade-up">
     <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>MERN E-Commerce App</strong> – 
-        <a href="https://github.com/anishrajoriya/mern-ecommerce-app" target="_blank">GitHub Link</a>
-        <br />
-        A full-featured eCommerce app with product management, cart, authentication, and admin dashboard.
-      </li>
-      <li>
-        <strong>Ticket Booking System</strong> – 
-        <a href="https://github.com/anishrajoriya/ticket-booking-system" target="_blank">GitHub Link</a>
-        <br />
-        Online platform to book cinema, event, and bus tickets.
-      </li>
-      <li>
-        <strong>Portfolio Website</strong> – 
-        <a href="https://anish9988.github.io/dev-portfolio" target="_blank">Live Link</a>
-        <br />
-        This personal portfolio website to showcase my skills and projects.
-      </li>
+    <div class="card">
+      <h3>MERN E-Commerce App</h3>
+      <p>eCommerce app with authentication, product management & admin panel.</p>
+      <a href="#"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+    <div class="card">
+      <h3>Ticket Booking System</h3>
+      <p>Online platform for cinema, event, and travel ticket booking.</p>
+      <a href="#"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+  </section>
+
+  <section id="activities" class="container" data-aos="fade-right">
+    <h2>Extra-Curricular Activities</h2>
+    <ul class="activity-list">
+      <li>Sports Captain in School</li>
+      <li>Volunteered at college technical fests and events</li>
+      <li>Part of Registration and Technical Support Team</li>
     </ul>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:anishrajoriya@example.com">anishrajoriya@example.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/anishrajoriya" target="_blank">linkedin.com/in/anishrajoriya</a></p>
-    <p>GitHub: <a href="https://github.com/anishrajoriya" target="_blank">github.com/anishrajoriya</a></p>
+  <section id="contact" class="container" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p><i class="fas fa-envelope"></i> anishrajoriya@example.com</p>
+    <p><i class="fab fa-linkedin"></i> <a href="#">linkedin.com/in/anishrajoriya</a></p>
+    <p><i class="fab fa-github"></i> <a href="#">github.com/anishrajoriya</a></p>
   </section>
 
   <footer>
-    <p>© 2025 Anish Rajoriya. All rights reserved.</p>
+    <p>© 2025 Anish Rajoriya</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    function toggleTheme() {
+      document.body.classList.toggle('dark-theme');
+    }
+  </script>
 </body>
 </html>
