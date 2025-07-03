@@ -1,90 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Anish Rajoriya • Dev Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anish Rajoriya | Developer Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header>
-    <div class="header-content" data-aos="fade-down">
-      <h1>Anish Rajoriya</h1>
-      <p>👨‍💻 Full Stack Developer & B.Tech Graduate</p>
-    </div>
     <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <h2 class="logo">Anish Rajoriya</h2>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#extracurricular">Activities</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section id="about" class="container" data-aos="fade-right">
+  <section class="hero fade-in">
+    <div class="content">
+      <h1>Hi, I'm <span>Anish Rajoriya</span></h1>
+      <p>Java | UI & Full-Stack Developer</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="about" class="about fade-in">
     <h2>About Me</h2>
-    <p>
-      I am a dedicated B.Tech graduate specializing in web development and MERN technologies. I excel at creating responsive web applications that are user-friendly and scalable, and I am eager to contribute and learn in a collaborative environment.
-    </p>
+    <p>I am a passionate full-stack developer with strong skills in Java, React, Spring Boot, and RESTful APIs. I focus on building responsive, scalable, and user-friendly applications.</p>
   </section>
 
-  <section id="skills" class="container" data-aos="fade-left">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div><i class="fab fa-java"></i><span>Java</span></div>
-      <div><i class="fab fa-react"></i><span>React.js</span></div>
-      <div><i class="fab fa-node"></i><span>Node.js</span></div>
-      <div><i class="fas fa-database"></i><span>MongoDB</span></div>
-      <div><i class="fab fa-html5"></i><span>HTML5</span></div>
-      <div><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
-      <div><i class="fab fa-js"></i><span>JavaScript</span></div>
-      <div><i class="fab fa-github"></i><span>Git & GitHub</span></div>
+  <section id="skills" class="skills fade-in">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Java, JavaScript, Python, C, C++, HTML, CSS</li>
+      <li><strong>Frameworks:</strong> React.js, Bootstrap, Spring (Basic), Spring Boot (Basic)</li>
+      <li><strong>Databases:</strong> Oracle (SQL, PL/SQL), MySQL, MongoDB</li>
+      <li><strong>Cloud/Other:</strong> AWS, REST API</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects fade-in">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>E-Commerce Product Page</h3>
+      <p><strong>Tech:</strong> HTML, CSS, JavaScript, React.js, Bootstrap</p>
+      <ul>
+        <li>Responsive design, real-time updates, interactive features.</li>
+        <li>Optimized performance using lazy loading and grid system.</li>
+      </ul>
+    </div>
+    <div class="project">
+      <h3>Smart Ticket Reservation System</h3>
+      <p><strong>Tech:</strong> Java, Spring Boot, React.js, MySQL, REST APIs</p>
+      <ul>
+        <li>Unified ticketing platform for events and transport.</li>
+        <li>Authentication, APIs, and responsive UI integration.</li>
+      </ul>
     </div>
   </section>
 
-  <section id="education" class="container" data-aos="zoom-in">
+  <section id="education" class="education fade-in">
     <h2>Education</h2>
-    <div class="edu-item">
-      <h3>B.Tech – GyanSagar College of Engineering</h3>
-      <span>2023</span>
-    </div>
+    <ul>
+      <li><strong>B.Tech. in Computer Science</strong> – Gyan Sagar Engineering College (2021–2025)</li>
+      <li><strong>12th Grade</strong> – Vatsalya Hr. Sec. School (2021)</li>
+      <li><strong>10th Grade</strong> – Vatsalya Hr. Sec. School (2019)</li>
+    </ul>
   </section>
 
-  <section id="projects" class="container">
-    <h2 data-aos="fade-up">Projects</h2>
-    <div class="projects-grid">
-      <div class="card" data-aos="fade-up" data-aos-delay="100">
-        <h3>MERN E-Commerce App</h3>
-        <p>Full-stack eCommerce application featuring product browsing, cart, authentication, and admin panel.</p>
-        <a href="#"><i class="fab fa-github"></i> GitHub</a>
-      </div>
-      <div class="card" data-aos="fade-up" data-aos-delay="200">
-        <h3>Ticket Booking System</h3>
-        <p>Unified booking platform for movies, events, and travel tickets.</p>
-        <a href="#"><i class="fab fa-github"></i> GitHub</a>
-      </div>
-    </div>
+  <section id="extracurricular" class="extracurricular fade-in">
+    <h2>Extracurricular Activities</h2>
+    <ul>
+      <li>Home Tutoring (Math & Science, 2 years): Designed custom lesson plans and used interactive methods to improve student performance.</li>
+      <li>Represented college at National-Level Football Tournament.</li>
+      <li>Played Football and Cricket at State Level during school.</li>
+    </ul>
   </section>
 
-  <section id="contact" data-aos="fade-up">
-    <div class="contact-container">
-      <h2>Contact</h2>
-      <p><i class="fas fa-envelope"></i> <a href="mailto:anishrajoriya@example.com">anishrajoriya@example.com</a></p>
-      <p><i class="fab fa-linkedin"></i> <a href="#">linkedin.com/in/anishrajoriya</a></p>
-      <p><i class="fab fa-github"></i> <a href="#">github.com/anishrajoriya</a></p>
-    </div>
+  <section id="contact" class="contact fade-in">
+    <h2>Contact</h2>
+    <p><i class="fa fa-envelope"></i> anishrajoriya909@gmail.com</p>
+    <p><i class="fa fa-phone"></i> 9424476609</p>
   </section>
 
   <footer>
-    <p>© 2025 Anish Rajoriya</p>
+    <p>&copy; 2025 Anish Rajoriya. All rights reserved.</p>
   </footer>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ once: true });
-  </script>
+  <script src="script.js"></script>
 </body>
+
 </html>
